@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export const fetchWeather = (city) => async (dispatch) => {
 	const response = await axios.get(
-		`http://www.mapquestapi.com/geocoding/v1/address?key=jWu6kJX0FXTOVucWLAFKW8bv2jDEbgmF&location=${city}`
+		`https://www.mapquestapi.com/geocoding/v1/address?key=jWu6kJX0FXTOVucWLAFKW8bv2jDEbgmF&location=${city}`
 	);
 
 	if (!response.data.results[0].locations[0].adminArea3) {
