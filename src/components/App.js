@@ -10,9 +10,9 @@ class App extends React.Component {
 
     render() {       
         return (
-            <div className={this.props.weather.summary}>           
+            <div className={this.props.weather.icon}>           
                 <div className="ui container">
-                    <Header />
+                    <Header />                        
                     <Weather />
                     <Video />                
                 </div>

@@ -6,7 +6,8 @@ export const fetchWeather = (city) => async (dispatch) => {
 	);
 
 	if (!response.data.results[0].locations[0].adminArea3) {
-        return alert('Unable to find that address');
+		dispatch(loading(false));
+		return alert('Unable to find that address');		
 	}
 	
 	let lat = response.data.results[0].locations[0].latLng.lat;
@@ -17,9 +18,9 @@ export const fetchWeather = (city) => async (dispatch) => {
 
 	dispatch(loading(false));
 
-	console.log(weather.data.currently)
+	console.log(weather.data)
 	
-	dispatch({ type: 'FETCH_WEATHER', payload: { area: response.data.results[0].locations[0], weather: weather.data.currently } });
+	dispatch({ type: 'FETCH_WEATHER', payload: { area: response.data.results[0].locations[0], weather: weather.data.currently, allWeather: weather.data.daily.data } });
 };
 
 export const loading = (boolean) => {

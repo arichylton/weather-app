@@ -1,6 +1,6 @@
 body {
     background-image: linear-gradient(to bottom, rgb(235, 235, 235), rgb(79, 114, 143));
-    color: rgb(35, 51, 58);
+    color: rgb(95, 145, 167);
 }
 
 .Overcast {
@@ -8,9 +8,9 @@ body {
     background-image: linear-gradient(to bottom, rgb(235, 235, 235),rgba(98, 85, 173, 0.89));
 }
 
-.Clear {
+.clear-day {
     height: 100vh;
-    background-image: linear-gradient(to bottom, rgb(235, 235, 235),rgba(4, 0, 255, 0.89));
+    background-image: linear-gradient(to bottom, rgb(255, 228, 109),rgba(93, 236, 255, 0.596));
 }
 
 .background-video{
