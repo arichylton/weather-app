@@ -15,10 +15,10 @@ class Header extends React.Component {
 
 	render() {
 		return (
-            <div style={{display: 'flex'}} className="secondary menu ui pointing">
-                    <h2 className="ui header item">Weather</h2>               
-                    <form onSubmit={this.onFormSubmit} className="ui form inverted item" style={{flex: '100 auto'}}>                       
-                        <input onChange={(e) => this.setState({ input: e.target.value })} value={this.state.input} type="text" placeholder="Search..."/>
+            <div style={{display: 'flex', borderBottom: '1px solid white'}} className="secondary container menu ui">
+                    <h1 style={{color: 'white'}} className="ui header item">Weather App</h1>               
+                    <form onSubmit={this.onFormSubmit} className="ui form inverted item" style={{flex: '1', maxWidth: '800px'}}>                       
+                        <input onChange={(e) => this.setState({ input: e.target.value })} value={this.state.input} required type="text" placeholder="Search..."/>
                     </form>    
             </div>
         );

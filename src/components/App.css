@@ -1,19 +1,104 @@
 body {
-    background-image: linear-gradient(to bottom, rgb(235, 235, 235), rgb(79, 114, 143));
-    color: rgb(95, 145, 167);
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #222, #111);
 }
 
-.Overcast {
+.default {
     height: 100vh;
-    background-image: linear-gradient(to bottom, rgb(235, 235, 235),rgba(98, 85, 173, 0.89));
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url(../pics/default.jpg);    
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .clear-day {
     height: 100vh;
-    background-image: linear-gradient(to bottom, rgb(255, 228, 109),rgba(93, 236, 255, 0.596));
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url(../pics/clear-day.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-.background-video{
-    height: 100%;
-    width: 100%;    
+.clear-night {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url(../pics/clear-night.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.partly-cloudy-day {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url(../pics/partly-cloudy-day.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.partly-cloudy-night {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url(../pics/partly-cloudy-night.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.cloudy {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url(../pics/cloudy.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.rain {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url(../pics/rain.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.sleet {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url(../pics/sleet.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.snow {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url(../pics/snow.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.wind {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url(../pics/wind.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.fog {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url(../pics/fog.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
