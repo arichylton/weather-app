@@ -97,7 +97,7 @@ class Weather extends React.Component {
 					</div>
 					<h3 className="ui header centered" style={{ marginTop: 40 }}>
 						<p>
-							Current temperature: {Math.ceil(apparentTemperature)} F / {Math.ceil((apparentTemperature - 32) / 1.8)} C{' '}
+							Feels like: {Math.ceil(apparentTemperature)} F / {Math.ceil((apparentTemperature - 32) / 1.8)} C{' '}
 						</p>
 						<p>
 
