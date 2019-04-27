@@ -106,7 +106,7 @@ class Weather extends React.Component {
 					
 					</h3>
 					<WeatherAccordian />
-				</div>
+				</div>				
 			</div>
 		);
 	}

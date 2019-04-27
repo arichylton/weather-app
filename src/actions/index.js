@@ -14,13 +14,16 @@ export const fetchWeather = (city) => async (dispatch) => {
 	let lng = response.data.results[0].locations[0].latLng.lng;
 
 	
+	
 	const weather = await axios.get(`https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/3a177cf49a5c831874f49818596387c3/${lat},${lng}`);
 
 	await dispatch(loading(false));
+
+	console.log(weather.data.timezone)
 	
 	dispatch({ 
 		type: 'FETCH_WEATHER', 
-		payload: { area: response.data.results[0].locations[0], weather: weather.data.currently, allWeather: weather.data.daily.data, todayWeather: weather.data.daily.data[0] } 
+		payload: { area: response.data.results[0].locations[0], weather: weather.data.currently, allWeather: weather.data.daily.data, weatherData: weather.data, todayWeather: weather.data.daily.data[0] } 
 	});
 
 	

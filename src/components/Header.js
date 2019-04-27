@@ -15,7 +15,7 @@ class Header extends React.Component {
 
 	render() {
 		return (
-            <div style={{display: 'flex', borderBottom: '1px solid white'}} className="secondary container menu ui">
+            <div style={{display: 'flex', borderBottom: '1px solid white'}} className="ui secondary menu contained">
                     <h1 style={{color: 'white'}} className="ui header item">Weather App</h1>               
                     <form onSubmit={this.onFormSubmit} className="ui form inverted item" style={{flex: '1', maxWidth: '800px'}}>                       
                         <input onChange={(e) => this.setState({ input: e.target.value })} value={this.state.input} required type="text" placeholder="Search..."/>
