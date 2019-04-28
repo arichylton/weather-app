@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import Skycons from 'react-skycons';
 
 import { fetchWeather } from '../actions';
-import WeatherAccordian from './WeatherTabs';
+import WeatherTabs from './WeatherTabs';
 
 class Weather extends React.Component {
 	renderDayWeather() {
@@ -24,9 +24,9 @@ class Weather extends React.Component {
 
 		if (!adminArea3) {
 			return (
-				<div className="ui raised very padded text container segment">
+				<div  style={{marginTop: 40}} className="ui raised very padded text inverted container segment">
 					<h2 className="ui header aligned center">Search a location for cool weather data!</h2>
-					<div className="ui fluid placeholder">
+					<div className="ui fluid inverted placeholder">
 						<div className="line"></div>							
 						<div className="line"></div>							
 						<div className="line"></div>							
@@ -37,7 +37,7 @@ class Weather extends React.Component {
 		} else if (!adminArea5) {
 			return (
 				<div>
-					<div className="ui raised very padded text small container segment">
+					<div  style={{marginTop: 40}} className="ui raised very padded text small inverted container segment">
 					<h1 className="ui header centered">
 						Weather for {adminArea3}
 					</h1>
@@ -68,7 +68,7 @@ class Weather extends React.Component {
 
 		if (this.props.loading) {
 			return (
-				<div className="ui raised very padded text small container segment">
+				<div  style={{marginTop: 40}} className="ui raised very padded text small inverted container segment">
 					<h1 className="ui header centered">
 						Searching...
 					</h1>
@@ -81,7 +81,7 @@ class Weather extends React.Component {
 
 		return (
 			<div>
-				<div className="ui raised very padded text small container segment">
+				<div style={{marginTop: 40}} className="ui raised very padded text small inverted container segment">
 					<h1 className="ui header centered">
 						Weather for {adminArea5}, {adminArea3}
 					</h1>
@@ -95,7 +95,7 @@ class Weather extends React.Component {
 							autoplay={true}
 						/>
 					</div>
-					<h3 className="ui header centered" style={{ marginTop: 40 }}>
+					<h3 className="ui header centered" style={{ marginTop: 40, marginBottom: 40 }}>
 						<p>
 							Feels like: {Math.ceil(apparentTemperature)} F / {Math.ceil((apparentTemperature - 32) / 1.8)} C{' '}
 						</p>
@@ -105,7 +105,7 @@ class Weather extends React.Component {
 						{this.renderDayWeather()}
 					
 					</h3>
-					<WeatherAccordian />
+					<WeatherTabs />
 				</div>				
 			</div>
 		);

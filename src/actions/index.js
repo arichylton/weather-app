@@ -19,14 +19,12 @@ export const fetchWeather = (city) => async (dispatch) => {
 
 	await dispatch(loading(false));
 
-	console.log(weather.data.timezone)
+	console.log(weather.data);
 	
 	dispatch({ 
 		type: 'FETCH_WEATHER', 
 		payload: { area: response.data.results[0].locations[0], weather: weather.data.currently, allWeather: weather.data.daily.data, weatherData: weather.data, todayWeather: weather.data.daily.data[0] } 
 	});
-
-	
 };
 
 export const loading = (boolean) => {

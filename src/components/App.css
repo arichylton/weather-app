@@ -1,10 +1,15 @@
+html {
+    font-size: 13px;
+}
+
 body {
 	height: 100%;
 	background-color: #111;
 }
 
 .default {
-	height: 100vh;
+	min-height: 100vh;
+	height: 100%;
 	width: 100%;
 	background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url(../pics/default.jpg);
 	background-size: cover;
@@ -13,7 +18,8 @@ body {
 }
 
 .clear-day {
-	height: 100vh;
+	min-height: 100vh;
+	height: 100%;
 	width: 100%;
 	background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url(../pics/clear-day.jpg);
 	background-size: cover;
@@ -22,7 +28,8 @@ body {
 }
 
 .clear-night {
-	height: 100vh;
+	min-height: 100vh;
+	height: 100%;
 	width: 100%;
 	background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url(../pics/clear-night.jpg);
 	background-size: cover;
@@ -32,6 +39,7 @@ body {
 
 .partly-cloudy-day {
 	min-height: 100vh;
+	height: 100%;
 	width: 100%;
 	background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url(../pics/partly-cloudy-day.jpg);
 	background-size: cover;
@@ -50,7 +58,8 @@ body {
 }
 
 .cloudy {
-	height: 100vh;
+	min-height: 100vh;
+	height: 100%;
 	width: 100%;
 	background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url(../pics/cloudy.jpg);
 	background-size: cover;
@@ -59,7 +68,8 @@ body {
 }
 
 .rain {
-	height: 100vh;
+	min-height: 100vh;
+	height: 100%;
 	width: 100%;
 	background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url(../pics/rain.jpg);
 	background-size: cover;
@@ -68,7 +78,8 @@ body {
 }
 
 .sleet {
-	height: 100vh;
+	min-height: 100vh;
+	height: 100%;
 	width: 100%;
 	background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url(../pics/sleet.jpg);
 	background-size: cover;
@@ -77,7 +88,8 @@ body {
 }
 
 .snow {
-	height: 100vh;
+	min-height: 100vh;
+	height: 100%;
 	width: 100%;
 	background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url(../pics/snow.jpg);
 	background-size: cover;
@@ -86,7 +98,8 @@ body {
 }
 
 .wind {
-	height: 100vh;
+	min-height: 100vh;
+	height: 100%;
 	width: 100%;
 	background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url(../pics/wind.jpg);
 	background-size: cover;
@@ -95,7 +108,8 @@ body {
 }
 
 .fog {
-	height: 100vh;
+	min-height: 100vh;
+	height: 100%;
 	width: 100%;
 	background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url(../pics/fog.jpg);
 	background-size: cover;
