@@ -68,32 +68,82 @@ class WeatherTabs extends React.Component {
 	};
 
 	renderCurrentWeather = () => {
-		const { apparentTemperature } = this.props.weather
+		const {
+			apparentTemperature,
+			humidity,
+			windSpeed,
+			dewPoint,
+			uvIndex,
+			visibility,
+			pressure
+		} = this.props.weather;
 
 		return (
-			<div style={{ marginTop: '30px' }} className="ui raised very padded text">
+			<div style={{ margin: '30px 0' }} className="ui raised very padded">
 				<h2 style={{ color: '#fa4b00' }} className="ui horizontal divider header">
 					{this.state.time}
 				</h2>
 				<div style={{ color: '#cce2ff' }} className="ui raised very padded text" />
 				<div style={{ marginTop: '30px' }} className="ui two column centered grid">
 					<div className="column aligned center">
-						<i className="ui thermometer half icon" />Temp {this.props.weather.apparentTemperature}
+						<div className="textb">
+							<i style={{ color: '#fa4b00' }} className="ui thermometer half icon" />Temp{' '}
+						</div>
+						<div className="textb">{`${Math.ceil(apparentTemperature)} F / ${Math.ceil(
+							(apparentTemperature - 32) / 1.8
+						)} C`}</div>
 					</div>
 					<div className="two column centered row">
 						<div className="column aligned center">
-							<i className="ui thermometer icon" />Humidity {this.props.weather.apparentTemperature}
+							<div className="textb">
+								<i
+									style={{ color: '#fa4b00', marginRight: 6 }}
+									className="ui angle double right icon"
+								/>{' '}
+								Wind
+							</div>
+							<div className="ui black large horizontal label text">{` ${Math.floor(
+								windSpeed
+							)} mph`}</div>
 						</div>
 						<div className="column aligned center">
-							<i className="ui thermometer icon" />Wind {this.props.weather.apparentTemperature}
+							<div className="textb">
+								<i
+									style={{ color: '#fa4b00', marginRight: 10 }}
+									className="ui tachometer alternate icon"
+								/>Humid.
+							</div>
+							<div className="ui black large horizontal label text">{` ${humidity * 100}%`}</div>
 						</div>
 					</div>
 					<div className="two column centered row">
 						<div className="column aligned center">
-							<i className="ui thermometer icon" />Rain {this.props.weather.apparentTemperature}
+							<div className="textb">
+								<i style={{ color: '#fa4b00', marginRight: 6 }} className="ui tint icon" />Dew Pt
+							</div>
+							<div className="ui black large horizontal label text">{Math.floor(dewPoint)}</div>
 						</div>
 						<div className="column aligned center">
-							<i className="ui thermometer icon" />Visibility {this.props.weather.apparentTemperature}
+							<div className="textb">
+								<i style={{ color: '#fa4b00', marginRight: 6 }} className="ui sun icon" />UV Index
+							</div>
+							<div className="ui black large horizontal label text">{uvIndex}</div>
+						</div>
+					</div>
+					<div className="two column centered row">
+						<div className="column aligned center">
+							<div className="textb">
+								<i style={{ color: '#fa4b00', marginRight: 8 }} className="ui eye icon" />Vis.
+							</div>
+							<div className="ui black large horizontal label text">{`${Math.floor(
+								visibility
+							)}+ mi`}</div>
+						</div>
+						<div className="column aligned center">
+							<div className="textb">
+								<i style={{ color: '#fa4b00', marginRight: 8 }} className="ui weight icon" />Pressure
+							</div>
+							<div className="ui black large horizontal label text">{`${Math.floor(pressure)} mb`}</div>
 						</div>
 					</div>
 				</div>
@@ -102,31 +152,85 @@ class WeatherTabs extends React.Component {
 	};
 
 	renderTodayWeather = () => {
+		const {
+			apparentTemperature,
+			humidity,
+			windSpeed,
+			dewPoint,
+			uvIndex,
+			visibility,
+			pressure
+		} = this.props.weather;
+
 		return (
-			<div style={{ marginTop: '30px' }} className="ui raised very padded text">
-				<h2 className="ui horizontal divider header">{moment().add(0, 'days').format('dddd MMMM Do')}</h2>
-				<table className="ui table">
-					<tbody>
-						<tr>
-							<td className="two wide column">
-								<h4>Temp</h4>
-							</td>
-							<td>{this.props.weather.apparentTemperature}</td>
-						</tr>
-						<tr>
-							<td>Weight</td>
-							<td>6 ounces</td>
-						</tr>
-						<tr>
-							<td>Color</td>
-							<td>Yellowish</td>
-						</tr>
-						<tr>
-							<td>Odor</td>
-							<td>Not Much Usually</td>
-						</tr>
-					</tbody>
-				</table>
+			<div style={{ margin: '30px 0' }} className="ui raised very padded">
+				<h2 style={{ color: '#fa4b00' }} className="ui horizontal divider header">
+					{moment().add(0, 'days').format('dddd MMMM Do')}
+				</h2>
+				<div style={{ color: '#cce2ff' }} className="ui raised very padded text" />
+				<div style={{ marginTop: '30px' }} className="ui two column centered grid">
+					<div className="column aligned center">
+						<div className="textb">
+							<i style={{ color: '#fa4b00' }} className="ui thermometer half icon" />Temp{' '}
+						</div>
+						<div className="textb">{`${Math.ceil(apparentTemperature)} F / ${Math.ceil(
+							(apparentTemperature - 32) / 1.8
+						)} C`}</div>
+					</div>
+					<div className="two column centered row">
+						<div className="column aligned center">
+							<div className="textb">
+								<i
+									style={{ color: '#fa4b00', marginRight: 6 }}
+									className="ui angle double right icon"
+								/>{' '}
+								Wind
+							</div>
+							<div className="ui black large horizontal label text">{` ${Math.floor(
+								windSpeed
+							)} mph`}</div>
+						</div>
+						<div className="column aligned center">
+							<div className="textb">
+								<i
+									style={{ color: '#fa4b00', marginRight: 10 }}
+									className="ui tachometer alternate icon"
+								/>Humid.
+							</div>
+							<div className="ui black large horizontal label text">{` ${humidity * 100}%`}</div>
+						</div>
+					</div>
+					<div className="two column centered row">
+						<div className="column aligned center">
+							<div className="textb">
+								<i style={{ color: '#fa4b00', marginRight: 6 }} className="ui tint icon" />Dew Pt
+							</div>
+							<div className="ui black large horizontal label text">{Math.floor(dewPoint)}</div>
+						</div>
+						<div className="column aligned center">
+							<div className="textb">
+								<i style={{ color: '#fa4b00', marginRight: 6 }} className="ui sun icon" />UV Index
+							</div>
+							<div className="ui black large horizontal label text">{uvIndex}</div>
+						</div>
+					</div>
+					<div className="two column centered row">
+						<div className="column aligned center">
+							<div className="textb">
+								<i style={{ color: '#fa4b00', marginRight: 8 }} className="ui eye icon" />Vis.
+							</div>
+							<div className="ui black large horizontal label text">{`${Math.floor(
+								visibility
+							)}+ mi`}</div>
+						</div>
+						<div className="column aligned center">
+							<div className="textb">
+								<i style={{ color: '#fa4b00', marginRight: 8 }} className="ui weight icon" />Pressure
+							</div>
+							<div className="ui black large horizontal label text">{`${Math.floor(pressure)} mb`}</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		);
 	};
