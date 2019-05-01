@@ -105,7 +105,7 @@ class WeatherTabs extends React.Component {
 										className="ui tachometer alternate icon"
 									/>Humid.
 								</div>
-								<div className="ui black large horizontal label text">{` ${day.humidity * 100}%`}</div>
+								<div className="ui black large horizontal label text">{` ${Math.floor(day.humidity * 100)}%`}</div>
 							</div>
 						</div>
 						<div className="two column centered row">
@@ -238,7 +238,7 @@ class WeatherTabs extends React.Component {
 									className="ui tachometer alternate icon"
 								/>Humid.
 							</div>
-							<div className="ui black large horizontal label text">{` ${humidity * 100}%`}</div>
+							<div className="ui black large horizontal label text">{` ${Math.floor(humidity * 100)}%`}</div>
 						</div>
 					</div>
 					<div className="two column centered row">
@@ -364,7 +364,7 @@ class WeatherTabs extends React.Component {
 									className="ui tachometer alternate icon"
 								/>Humid.
 							</div>
-							<div className="ui black large horizontal label text">{` ${humidity * 100}%`}</div>
+							<div className="ui black large horizontal label text">{` ${Math.floor(humidity * 100)}%`}</div>
 						</div>
 					</div>
 					<div className="two column centered row">
