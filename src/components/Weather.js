@@ -53,7 +53,7 @@ class Weather extends React.Component {
 					</div>
 					<h3 className="ui header centered" style={{ marginTop: 40 }}>
 						<p>
-							Current temperature: {Math.ceil(apparentTemperature)} F / {Math.ceil((apparentTemperature - 32) / 1.8)} C{' '}
+							Current temperature: {Math.ceil(apparentTemperature)}˚ F / {Math.ceil((apparentTemperature - 32) / 1.8)}˚ C{' '}
 						</p>
 						<p>
 
@@ -81,7 +81,7 @@ class Weather extends React.Component {
 
 		return (
 			<div>
-				<div style={{marginTop: 40}} className="ui raised very padded text small inverted container segment">
+				<div style={{margin: '40px 0'}} className="ui raised very padded text small inverted container segment">
 					<h1 className="ui header centered">
 						Weather for {adminArea5}, {adminArea3}
 					</h1>
@@ -97,7 +97,7 @@ class Weather extends React.Component {
 					</div>
 					<h3 className="ui header centered" style={{ marginTop: 40, marginBottom: 40 }}>
 						<p>
-							Feels like: {Math.ceil(apparentTemperature)} F / {Math.ceil((apparentTemperature - 32) / 1.8)} C{' '}
+							Feels like: {Math.ceil(apparentTemperature)}˚ F / {Math.ceil((apparentTemperature - 32) / 1.8)}˚ C{' '}
 						</p>
 						<p>
 

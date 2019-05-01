@@ -17,9 +17,7 @@ export const fetchWeather = (city) => async (dispatch) => {
 	
 	const weather = await axios.get(`https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/3a177cf49a5c831874f49818596387c3/${lat},${lng}`);
 
-	await dispatch(loading(false));
-
-	console.log(weather.data);
+	dispatch(loading(false));
 	
 	dispatch({ 
 		type: 'FETCH_WEATHER', 

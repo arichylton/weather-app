@@ -4,30 +4,40 @@ import { connect } from 'react-redux';
 import Header from './Header';
 import Weather from './Weather';
 import Footer from './Footer';
+
 import './App.css';
+import './Footer.css'
 
 class App extends React.Component {
 	render() {
-		if (!this.props.weather.adminArea3) {
+
+		if (this.props.loading) {
 			return (
-				<div className="default">
-					<div className="ui container">
-						<Header />
-						<Weather />
+				<div>
+					<div className={this.props.weather.icon}>
+						<div className="ui active dimmer">
+							<div className="ui big text loader">Searching...</div>
+						</div>
 					</div>
 				</div>
 			);
 		}
 
-		if (this.props.loading) {
+		if (!this.props.weather.adminArea3) {
 			return (
-				<div className={this.props.weather.icon}>
-					<div className="ui active dimmer">
-						<div className="ui big text loader">Searching...</div>
+				<div>
+					<div className="default">
+						<div className="ui container">
+							<Header />
+							<Weather />
+						</div>
+					</div>
+					<div className="region">
+						<Footer />
 					</div>
 				</div>
 			);
-		}
+		}	
 
 		return (
 			<div>
@@ -35,12 +45,11 @@ class App extends React.Component {
 					<div className="ui container">
 						<Header />
 						<Weather />
-                        <Footer />
 					</div>
 				</div>
-                <div className="ui container">
-                   
-                </div>				
+				<div className="region">
+					<Footer />
+				</div>
 			</div>
 		);
 	}

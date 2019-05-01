@@ -1,0 +1,28 @@
+.region {
+	height: 150px;
+	width: 100vw;
+	font-family: 'Roboto', sans-serif;
+	font-size: 70%;
+	background-color: rgb(24, 24, 24);
+
+	display:flex;
+	align-items: center;
+}
+
+ion-icon {
+	color: rgba(255, 0, 0, 0.815) !important;
+	margin: -3px 5px;
+	vertical-align: center;
+}
+
+a:link,
+a:visited {
+	color: #4682B4;
+	margin-bottom: 50px;
+	padding: 5px;
+}
+
+a:hover,
+a:active {
+	color:  #fa4b00;
+}

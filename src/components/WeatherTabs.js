@@ -57,7 +57,7 @@ class WeatherTabs extends React.Component {
 							</div>
 							<div className="column aligned center">
 								<div className="textb">
-									<i style={{ color: '#008B8B' }} className="ui sun icon" />Set{' '}
+									<i style={{ color: '#4682B4' }} className="ui sun icon" />Set{' '}
 								</div>
 								<div style={{ fontSize: 17 }} className="textb">
 									{moment.unix(day.sunsetTime).format('h:mm a')}
@@ -70,7 +70,7 @@ class WeatherTabs extends React.Component {
 						<div className="four column centered row divided">
 							<div className="column aligned center">
 								<div className="textb">
-									<i style={{ color: '#008B8B' }} className="ui thermometer empty icon" />Low{' '}
+									<i style={{ color: '#4682B4' }} className="ui thermometer empty icon" />Low{' '}
 								</div>
 								<div style={{ fontSize: 17, marginBottom: 0 }} className="textb">
 									{`${Math.ceil(day.temperatureMin)}˚ F`}
@@ -89,7 +89,7 @@ class WeatherTabs extends React.Component {
 							<div className="column aligned center">
 								<div className="textb">
 									<i
-										style={{ color: '#008B8B', marginRight: 6 }}
+										style={{ color: '#4682B4', marginRight: 6 }}
 										className="ui angle double right icon"
 									/>{' '}
 									Wind
@@ -101,7 +101,7 @@ class WeatherTabs extends React.Component {
 							<div className="column aligned center">
 								<div className="textb">
 									<i
-										style={{ color: '#008B8B', marginRight: 10 }}
+										style={{ color: '#4682B4', marginRight: 10 }}
 										className="ui tachometer alternate icon"
 									/>Humid.
 								</div>
@@ -112,7 +112,7 @@ class WeatherTabs extends React.Component {
 							<div className="column aligned center">
 								<div className="textb">
 									<i
-										style={{ color: '#008B8B', marginRight: 6 }}
+										style={{ color: '#4682B4', marginRight: 6 }}
 										className="ui umbrella icon"
 									/>Precip.
 								</div>
@@ -121,7 +121,7 @@ class WeatherTabs extends React.Component {
 							</div>
 							<div className="column aligned center">
 								<div className="textb">
-									<i style={{ color: '#008B8B', marginRight: 6 }} className="ui sun icon" />UV Index
+									<i style={{ color: '#4682B4', marginRight: 6 }} className="ui sun icon" />UV Index
 								</div>
 								<div className="ui black large horizontal label text">{day.uvIndex}</div>
 							</div>
@@ -129,7 +129,7 @@ class WeatherTabs extends React.Component {
 						<div className="two column centered row">
 							<div className="column aligned center">
 								<div className="textb">
-									<i style={{ color: '#008B8B', marginRight: 8 }} className="ui eye icon" />Vis.
+									<i style={{ color: '#4682B4', marginRight: 8 }} className="ui eye icon" />Vis.
 								</div>
 								<div className="ui black large horizontal label text">{`${Math.floor(
 									day.visibility
@@ -138,7 +138,7 @@ class WeatherTabs extends React.Component {
 							<div className="column aligned center">
 								<div className="textb">
 									<i
-										style={{ color: '#008B8B', marginRight: 8 }}
+										style={{ color: '#4682B4', marginRight: 8 }}
 										className="ui weight icon"
 									/>Pressure
 								</div>
@@ -209,7 +209,7 @@ class WeatherTabs extends React.Component {
 					{this.state.time}
 				</h2>
 				<div style={{ color: '#cce2ff' }} className="ui raised very padded text" />
-				<div style={{ marginTop: '30px' }} className="ui two column centered grid">
+				<div style={{ marginTop: '20px' }} className="ui two column centered grid">
 					<div className="column aligned center">
 						<div className="textb">
 							<i className="ui thermometer half black icon" />Temp{' '}
@@ -222,7 +222,7 @@ class WeatherTabs extends React.Component {
 						<div className="column aligned center">
 							<div className="textb">
 								<i
-									style={{ color: '#008B8B', marginRight: 6 }}
+									style={{ color: '#4682B4', marginRight: 6 }}
 									className="ui angle double right icon"
 								/>{' '}
 								Wind
@@ -234,7 +234,7 @@ class WeatherTabs extends React.Component {
 						<div className="column aligned center">
 							<div className="textb">
 								<i
-									style={{ color: '#008B8B', marginRight: 10 }}
+									style={{ color: '#4682B4', marginRight: 10 }}
 									className="ui tachometer alternate icon"
 								/>Humid.
 							</div>
@@ -244,13 +244,13 @@ class WeatherTabs extends React.Component {
 					<div className="two column centered row">
 						<div className="column aligned center">
 							<div className="textb">
-								<i style={{ color: '#008B8B', marginRight: 6 }} className="ui tint icon" />Dew Pt
+								<i style={{ color: '#4682B4', marginRight: 6 }} className="ui tint icon" />Dew Pt
 							</div>
 							<div className="ui black large horizontal label text">{`${Math.floor(dewPoint)}˚`}</div>
 						</div>
 						<div className="column aligned center">
 							<div className="textb">
-								<i style={{ color: '#008B8B', marginRight: 6 }} className="ui sun icon" />UV Index
+								<i style={{ color: '#4682B4', marginRight: 6 }} className="ui sun icon" />UV Index
 							</div>
 							<div className="ui black large horizontal label text">{uvIndex}</div>
 						</div>
@@ -258,7 +258,7 @@ class WeatherTabs extends React.Component {
 					<div className="two column centered row">
 						<div className="column aligned center">
 							<div className="textb">
-								<i style={{ color: '#008B8B', marginRight: 8 }} className="ui eye icon" />Vis.
+								<i style={{ color: '#4682B4', marginRight: 8 }} className="ui eye icon" />Vis.
 							</div>
 							<div className="ui black large horizontal label text">{`${Math.floor(
 								visibility
@@ -266,7 +266,7 @@ class WeatherTabs extends React.Component {
 						</div>
 						<div className="column aligned center">
 							<div className="textb">
-								<i style={{ color: '#008B8B', marginRight: 8 }} className="ui weight icon" />Pressure
+								<i style={{ color: '#4682B4', marginRight: 8 }} className="ui weight icon" />Pressure
 							</div>
 							<div className="ui black large horizontal label text">{`${Math.floor(pressure)} mb`}</div>
 						</div>
@@ -308,7 +308,7 @@ class WeatherTabs extends React.Component {
 						</div>
 						<div className="column aligned center">
 							<div className="textb">
-								<i style={{ color: '#008B8B' }} className="ui sun icon" />Set{' '}
+								<i style={{ color: '#4682B4' }} className="ui sun icon" />Set{' '}
 							</div>
 							<div style={{ fontSize: 17 }} className="textb">
 								{moment.unix(sunsetTime).format('h:mm a')}
@@ -321,7 +321,7 @@ class WeatherTabs extends React.Component {
 					<div className="four column centered row">
 						<div className="column aligned center">
 							<div className="textb">
-								<i style={{ color: '#008B8B' }} className="ui thermometer empty icon" />Low{' '}
+								<i style={{ color: '#4682B4' }} className="ui thermometer empty icon" />Low{' '}
 							</div>
 							<div style={{ fontSize: 17, marginBottom: 0 }} className="textb">
 								{`${Math.ceil(temperatureMin)}˚ F`}
@@ -348,7 +348,7 @@ class WeatherTabs extends React.Component {
 						<div className="column aligned center">
 							<div className="textb">
 								<i
-									style={{ color: '#008B8B', marginRight: 6 }}
+									style={{ color: '#4682B4', marginRight: 6 }}
 									className="ui angle double right icon"
 								/>{' '}
 								Wind
@@ -360,7 +360,7 @@ class WeatherTabs extends React.Component {
 						<div className="column aligned center">
 							<div className="textb">
 								<i
-									style={{ color: '#008B8B', marginRight: 10 }}
+									style={{ color: '#4682B4', marginRight: 10 }}
 									className="ui tachometer alternate icon"
 								/>Humid.
 							</div>
@@ -370,13 +370,13 @@ class WeatherTabs extends React.Component {
 					<div className="two column centered row">
 						<div className="column aligned center">
 							<div className="textb">
-								<i style={{ color: '#008B8B', marginRight: 6 }} className="ui umbrella icon" />Precip.
+								<i style={{ color: '#4682B4', marginRight: 6 }} className="ui umbrella icon" />Precip.
 							</div>
 							<div className="ui black large horizontal label text">{`${precipProbability * 100} %`}</div>
 						</div>
 						<div className="column aligned center">
 							<div className="textb">
-								<i style={{ color: '#008B8B', marginRight: 6 }} className="ui sun icon" />UV Index
+								<i style={{ color: '#4682B4', marginRight: 6 }} className="ui sun icon" />UV Index
 							</div>
 							<div className="ui black large horizontal label text">{uvIndex}</div>
 						</div>
@@ -384,7 +384,7 @@ class WeatherTabs extends React.Component {
 					<div className="two column centered row">
 						<div className="column aligned center">
 							<div className="textb">
-								<i style={{ color: '#008B8B', marginRight: 8 }} className="ui eye icon" />Vis.
+								<i style={{ color: '#4682B4', marginRight: 8 }} className="ui eye icon" />Vis.
 							</div>
 							<div className="ui black large horizontal label text">{`${Math.floor(
 								visibility
@@ -392,7 +392,7 @@ class WeatherTabs extends React.Component {
 						</div>
 						<div className="column aligned center">
 							<div className="textb">
-								<i style={{ color: '#008B8B', marginRight: 8 }} className="ui weight icon" />Pressure
+								<i style={{ color: '#4682B4', marginRight: 8 }} className="ui weight icon" />Pressure
 							</div>
 							<div className="ui black large horizontal label text">{`${Math.floor(pressure)} mb`}</div>
 						</div>
